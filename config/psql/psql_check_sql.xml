@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SQL_LIST>
+	<PSQL_01>
+		<![CDATA[
+			select * from pg_user
+		]]>
+	</PSQL_01>
+	<PSQL_02>
+		<![CDATA[
+			select usename as usename, passwd is not null as password_encrypted from pg_catalog.pg_user
+		]]>
+	</PSQL_02>
+	<PSQL_03>
+		<![CDATA[
+			select column_name as column_name FROM information_schema.columns where table_name = 'PG_USER'
+		]]>
+	</PSQL_03>
+	<PSQL_04>
+		<![CDATA[
+			select rolname as rolname, rolsuper as rolsuper, rolcreaterole as rolcreaterole, rolcreatedb as rolcreatedb, rolreplication as rolreplication from pg_roles
+		]]>
+	</PSQL_04>
+	<PSQL_05>
+		<![CDATA[
+			select * from pg_user where usesuper = true
+		]]>
+	</PSQL_05>
+	<PSQL_06>
+		<![CDATA[
+			select * from information_schema.role_table_grants where table_schema='pg_catalog'
+		]]>
+	</PSQL_06>
+	<PSQL_07>
+		<![CDATA[
+			select * from information_schema.role_table_grants where grantee= 'PUBLIC'
+		]]>
+	</PSQL_07>
+	
+	<PSQL_08>
+		<![CDATA[
+			select distinct relowner from pg_class where not exists (select usename from pg_user where usesuper=TRUE)
+		]]>
+	</PSQL_08>
+	
+	<PSQL_09>
+		<![CDATA[
+			select * from information_schema.role_table_grants where is_grantable='YES'
+		]]>
+	</PSQL_09>
+	<PSQL_10>
+		<![CDATA[
+			select version()
+		]]>
+	</PSQL_10>
+	<PSQL_11>
+		<![CDATA[
+			show logging_collector
+		]]>
+	</PSQL_11>
+	<PSQL_12>
+		<![CDATA[
+			show log_statement
+		]]>
+	</PSQL_12>
+</SQL_LIST>

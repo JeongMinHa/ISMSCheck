@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SQL_LIST>
+	<MYSQL_01>
+		<![CDATA[
+			select host as host, user as user from mysql.user where user != 'root'
+		]]>
+	</MYSQL_01>
+	<MYSQL_02>
+		<![CDATA[
+			show global variables like '%plu%'
+		]]>
+	</MYSQL_02>
+	<MYSQL_03>
+		<![CDATA[
+			show global variables like '%vali%'
+		]]>
+	</MYSQL_03>
+	<MYSQL_04>
+		<![CDATA[
+			select host as host, user as user, select_priv as select_priv, insert_priv as insert_priv, delete_priv as delete_priv from mysql.user where (select_priv = 'Y' or insert_priv = 'Y' or delete_priv = 'Y') and user <> 'root'
+		]]>
+	</MYSQL_04>
+	<MYSQL_05>
+		<![CDATA[
+			select host as host, user as user from mysql.user
+		]]>
+	</MYSQL_05>
+	<MYSQL_06>
+		<![CDATA[
+			select host as host, user as user from mysql.db
+		]]>
+	</MYSQL_06>
+	<MYSQL_07>
+		<![CDATA[
+			select host as host, user as user, select_priv as select_priv from mysql.user where select_priv = 'Y' and user <> 'root'
+		]]>
+	</MYSQL_07>
+	<MYSQL_08>
+		<![CDATA[
+			select version()
+		]]>
+	</MYSQL_08>
+	<MYSQL_09>
+		<![CDATA[
+			select user as user, grant_priv as grant_priv from mysql.user
+		]]>
+	</MYSQL_09>
+	<MYSQL_10>
+		<![CDATA[
+			show global variables where variable_name in ('version', 'log', 'general_log', 'general_log_file', 'log_error', 'log_output', 'slow_query_log', 'slow_query_log_file')
+		]]>
+	</MYSQL_10>
+</SQL_LIST>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SQL_LIST>
+	<ORACLE_01>
+		<![CDATA[
+			select username as username, password as password, account_status as account_status from dba_users
+			where password = 
+			Decode(username,'#INTERNAL','38379FC3621F7DA2','#INTERNAL','87DADF57B623B777',
+			'ABM','D0F2982F121C7840','ADAMS','72CDEF4A3483F60D','ADLDEMO','147215F51929A6E8'
+			,'CTXDEMO','CB6B5E9D9672FE89'
+			,'CTXSYS','71E687F036AD56E5','CTXSYS','24ABAB8B06281B4C','CTXSYS','A13C035631643BA0'
+			,'HR','33EBE1C63D5B7FEF','HR','6399F3B38EDF3288','HR','4C6D73C3E8B0F0DA'
+			,'INTERNAL','AB27B53EDC5FEF41','INTERNAL','E0BF7F3DDE682D3B'
+			,'JONES','B9E99443032F059D'
+			,'MASTER','9C4F452058285A74'
+			,'MDSYS','72979A94BAD2AF80'
+			,'OE','9C30855E7E0CB02D','OE','62FADF01C4DC1ED4','OE','D1A2DFC623FDA40A'
+			,'ORACLE','38E38619A12E0257'
+			,'ORADBA','C37E732953A8ABDB'
+			,'ORANGE','3D9B7E34A4F7D4E9'
+			,'DBSNMP','E066D214D5421CCC'
+			,'DBVISION','F74F7EF36A124931'
+			,'DEMO','4646116A123897CF'
+			,'HR','6E0C251EABE4EBB8'
+			,'ADAMS','72CDEF4A3483F60D'
+			,'ANDY','B8527562E504BC3F'
+			,'BLAKE','9435F2E60569158E'
+			,'SYSMAN','447B729161192C24'
+			,'SYSTEM','8BF0DA8E551DE1B9','SYSTEM','1B9F1F9A5CB9EB31','SYSTEM','D4DF7931AB130E37','SYSTEM','2D594E86F93B17A1','SYSTEM','4861C2264FB17936'
+			,'SYSTEM','970BAA5B81930A40','SYSTEM','135176FFB5BA07C9','SYSTEM','E4519FCD3A565446','SYSTEM','66A490AEAA61FF72','SYSTEM','10B0C2DA37E11872','SYSTEM','4438308EE0CAFB7F'
+			,'TEST','26ED9DD4450DD33C','TEST','7A0F2B316C212D67'
+			,'TEST_USER','C0A0F776EBBBB7FB'
+			,'USER','74085BE8A9CF16B4'
+			,'USER0','8A0760E2710AB0B4'
+			,'USER1','BBE7786A584F9103'
+			,'WKPROXY','B97545C4DD2ABE54'
+			,'WKSYS','69ED49EE1851900D','WKSYS','545E13456B7DDEA0'
+			,'WK_SYS','79DF7A1BD138CF11'
+			,'WK_TEST','29802572EB547DBF'
+			,'ORDSYS','7EFA02EC7EA6B86F'
+			,'OUTLN','4A3BA55E08595C81'
+			,'PM','72E382A52E89575A','PM','C7A235E6D2AF6018'
+			,'QS','8B09C6075BDF2DC4','QS','4603BCD2744BDE4F'
+			,'QS_ADM','991CDDAD5C5C32CA','QS_ADM','3990FB418162F2A0'
+			,'QS_CB','CF9CFACF5AE24964','QS_CB','870C36D8E6CD7CF5'
+			,'QS_CBADM','7C632AFB71F8D305','QS_CBADM','20E788F9D4F1D92C'
+			,'QS_CS','91A00922D8C0F146','QS_CS','2CA6D0FC25128CF3'
+			,'QS_ES','E6A6FA4BB042E3C2','QS_ES','9A5F2D9F5D1A9EF4'
+			,'QS_OS','FF09F3EB14AE5C26','QS_OS','0EF5997DC2638A61'
+			,'QS_WS','24ACF617DD7D8F2F','QS_WS','0447F2F756B4F460'
+			,'SAMPLE','E74B15A3F7A19CA8'
+			,'SCOTT','F894844C34402B67','SCOTT','7AA1A84E31ED7771'
+			,'SH','9793B3777CD3BD1A','SH','54B253CBBAAA8C48','SH','1729F80C5FA78841'
+			,'SYS','D4C5016086B2DC6A','SYS','43BE121A2A135FF3','SYS','5638228DAF52805F','SYS','8A8F025737A9097A','SYS','4DE42795E66117AE'
+			,'SYS','66BC3FF56063CE97','SYS','57D7CFA12BB5BABF','SYS','A9A57E819B32A03D','SYS','2905ECA56A830226','SYS','64074AF827F4B74A'
+			,'SYSADM','BA3E855E93B5B9B0'
+			,'SYSADMIN','DC86E8DEAA619C1A'
+			,'SYSMAN','639C32A115D2CA57'
+			,'tracesvr','F9DA8977092B7B81'
+			,'ordplugins','88A2B2C183431F00'
+			,'clark','7AAFE7D01511D73F'
+			,'lbacsys','AC9700FD3F1410EB'
+			,username) and account_status='OPEN'
+		]]>
+	</ORACLE_01>
+	<ORACLE_02>
+		<![CDATA[
+			select username as username, account_status as account_status from dba_users 
+			where ACCOUNT_STATUS = 'OPEN' 
+			and username in ('SCOTT','HR','OE','PM','SH',
+			'COMPANY','MFG','FINANCE','ANYDATA_USER',
+			'ANYDSET_USER','ANYTYPE_USER','AQJAVA','AQUSER',
+			'AQXMLUSER','GPFD','GPLD','MMO2','XMLGEN1',
+			'BLAKE','ADAMS','CLARK','JONES')
+			or username like 'QS%'
+			or username like 'USER%'
+			or username like '%DEMO%'
+			or username like 'SERVICECONSUMER%'
+		]]>
+	</ORACLE_02>
+	<ORACLE_03>
+		<![CDATA[
+			select A.username as username, B.profile as profile, B.resource_name as resource_name, B.limit as limit from dba_users A,dba_profiles B
+			where A.profile = B.profile and B.resource_name = 'PASSWORD_VERIFY_FUNCTION' and A.account_status ='OPEN'
+		]]>
+	</ORACLE_03>
+	<ORACLE_04>
+		<![CDATA[
+			select DU.username as username, DP.profile as profile, DP.resource_name as resource_name, DP.limit as limit from 
+			dba_users DU INNER JOIN dba_profiles DP ON DP.profile = DU.profile 
+			where DU.account_status = 'OPEN' 
+			and DP.resource_name in ('PASSWORD_LIFE_TIME' ,'PASSWORD_GRACE_TIME')
+		]]>
+	</ORACLE_04>
+	<ORACLE_05>
+		<![CDATA[
+			select name as name, ptime as ptime from sys.user$ where name in (select username from dba_users where account_status='OPEN')
+		]]>
+	</ORACLE_05>
+	<ORACLE_06>
+		<![CDATA[
+			select username as username, sysdba as sysdba from v$pwfile_users  
+			WHERE username in (select username from dba_users where account_status = 'OPEN') 
+			and USERNAME NOT IN (SELECT GRANTEE FROM DBA_ROLE_PRIVS WHERE GRANTED_ROLE='DBA') 
+			and username NOT IN ('SYS','CTXSYS','MDSYS','ODM','OLAPSYS','MTSSYS','ORDPLUGINS','ORDSYS','SYSTEM','WKSYS','WMSYS','XDB','LBACSYS','PERFSTAT','SYSMAN','DMSYS','EXFSYS','WK_TEST','IMP_FULL_DATABASE','FLOWS_030000','MGMT_VIEW','INTERNAL')
+			and sysdba='TRUE'
+		]]>
+	</ORACLE_06>
+	<ORACLE_07>
+		<![CDATA[
+			select grantee as grantee, privilege as privilege, admin_option as admin_option from dba_sys_privs 
+			where grantee in (select username from dba_users where account_status = 'OPEN')
+			and grantee not in ('SYS','SYSTEM','AQ_ADMINISTRATOR_ROLE','DBA','MDS YS','LBACSYS','SCHEDULER_ADMIN','WMSYS')
+			and admin_option='YES'
+			and grantee not in (select grantee from dba_role_privs where granted_role='DBA')
+		]]>
+	</ORACLE_07>
+	<ORACLE_08>
+		<![CDATA[
+			select DU.username as username, DP.profile as profile, DP.resource_name as resource_name, DP.limit as limit from dba_users DU INNER JOIN dba_profiles DP ON DP.profile = DU.profile 
+			where DU.account_status = 'OPEN' 
+			and DP.resource_name in ('PASSWORD_REUSE_TIME','PASSWORD_REUSE_MAX')
+		]]>
+	</ORACLE_08>
+	<ORACLE_09>
+		<![CDATA[
+			select username as username, account_status as account_status from dba_users where account_status='OPEN'
+		]]>
+	</ORACLE_09>
+	<ORACLE_10>
+		<![CDATA[
+			select name as name, value as value from v$parameter WHERE name='remote_os_authent'
+		]]>
+	</ORACLE_10>
+	<ORACLE_11>
+		<![CDATA[
+			select A.grantee as grantee, A.privilege as privilege, A.owner as owner, A.table_name as table_name from 
+			(
+			  select grantee,privilege,owner,table_name  from dba_tab_privs
+			  where (owner='SYS' or table_name like 'DBA_%')
+			  and privilege <> 'EXECUTE'
+			  and grantee not in ('PUBLIC','AQ_ADMINISTRATOR_ROLE'
+			  ,'AQ_USER_ROLE','AURORA$JIS$UTILITY$','OSE$HTTP$ADMIN','TRACESVR','CTXSYS','DBA','DELETE_CATALOG_ROLE','EXECUTE_CATALOG_ROLE','EXP_FULL_DATABASE','GATHER_SYSTEM_STATISTICS','
+			  HS_ADMIN_ROLE','IMP_FULL_DATABASE','LOGSTDBY_ADMINISTRATOR','MDSYS','ODM','OEM_MONITOR','OLAPSYS','ORDSYS','OUTLN','RECOVERY_CATALOG_OWNER','SELECT_CATALOG_ROLE','SNMPAGENT','SYSTEM','WKSYS','WKUSER','WMSYS','WM_ADMIN_ROLE','XDB','LBACSYS','PERFSTAT','XDBADMIN',
+			  'ANONYMOUS','APPQOSSYS','DBMON','DBSNMP','DIP','DMSYS','EXFSYS','MDDATA','MGMT_VIEW','ORACLE_OCM','ORDDATA','ORDPLUGINS','OWBSYS','OWBSYS_AUDIT','SI_INFORMTN_SCHEMA','SPATIAL_CSW_ADMIN_USR','SPATIAL_WFS_ADMIN_USR','SQLTXPLAIN','SYS','SYSMAN','SYSMAN_MDS','TSMSYS')
+			  and grantee not in (select grantee from dba_role_privs where granted_role='DBA') order by grantee
+			) A, 
+			(
+			  select username,ACCOUNT_STATUS from dba_users where ACCOUNT_STATUS = 'OPEN'
+			)B
+			where B.username = A.grantee
+		]]>
+	</ORACLE_11>
+	<ORACLE_12>
+		<![CDATA[
+			select product as product, version as version from product_component_version		
+		]]>
+	</ORACLE_12>
+	<ORACLE_13>
+		<![CDATA[
+			select DU.username as username, DP.profile as profile, DP.resource_name as resource_name, DP.limit as limit from dba_users DU INNER JOIN dba_profiles DP ON DP.profile = DU.profile 
+			where DU.account_status = 'OPEN' 
+			and DP.resource_name in ('FAILED_LOGIN_ATTEMPTS','PASSWORD_LOCK_TIME')
+		]]>
+	</ORACLE_13>
+	<ORACLE_14>
+		<![CDATA[
+			select name as name from v$controlfile
+		]]>
+	</ORACLE_14>
+	<ORACLE_15>
+		<![CDATA[
+			select value as value from v$parameter where name='spfile'
+		]]>
+	</ORACLE_15>
+	<ORACLE_16>
+		<![CDATA[
+			select member as member from v$logfile
+		]]>
+	</ORACLE_16>
+	<ORACLE_17>
+		<![CDATA[
+			select name as name from V$datafile
+		]]>
+	</ORACLE_17>
+	<ORACLE_18>
+		<![CDATA[
+			select grantee as grantee, granted_role as granted_role from dba_role_privs where grantee='PUBLIC'
+		]]>
+	</ORACLE_18>
+	<ORACLE_19>
+		<![CDATA[
+			select name as name, value as value from v$parameter where name='os_roles' or name='remote_os_roles'
+		]]>
+	</ORACLE_19>
+	<ORACLE_20>
+		<![CDATA[
+			select profile as profile, limit as limit from dba_profiles, (SELECT limit AS def_pwd_verify_func FROM dba_profiles WHERE resource_name = 'PASSWORD_VERIFY_FUNCTION' AND profile = 'DEFAULT') WHERE resource_name='PASSWORD_VERIFY_ FUNCTION' AND REPLACE(limit,'DEFAULT',def_pwd_verify_func) in ('UNLIMITED', 'NULL')
+		]]>
+	</ORACLE_20>
+	<ORACLE_21>
+		<![CDATA[
+			select owner as owner, object_name as object_name from dba_objects 
+			where owner in (select username from dba_users where account_status = 'OPEN')
+			and owner not in
+			('SYS','SYSTEM','MDSYS','CTXSYS','ORDSYS','ORDPLUGINS','TSMSYS','EXFSYS','DMSYS'
+			,'AURORA$JIS$UTILITY$','HR','ODM','ODM_MTR','OE','OLAPDBA'
+			,'OLAPSYS','OSE$HTTP$ADMIN','OUTLN','LBACSYS','MTSYS','PM'
+			,'PUBLIC','QS','QS_ADM','QS_CB','QS_CBADM','DBSNMP','QS_CS'
+			,'QS_ES','QS_OS','QS_WS','RMAN','SH','WKSYS','WMSYS','XDB'
+			,'ANONYMOUS','APPQOSSYS','DBMON','DIP','MDDATA','MGMT_VIEW','ORACLE_OCM','ORDDATA','OWBSYS','OWBSYS_AUDIT','PERFSTAT','SI_INFORMTN_SCHEMA','SPATIAL_CSW_ADMIN_USR','SPATIAL_WFS_ADMIN_USR','SQLTXPLAIN','SYSMAN','SYSMAN_MDS','WMSYS','XDB')
+			and owner not in (select grantee from dba_role_privs where granted_role='DBA')
+		]]>
+	</ORACLE_21>
+	<ORACLE_22>
+		<![CDATA[
+			select A.grantee as grantee, A.owner as owner, A.table_name as table_name, A.grantable as grantable from (
+			  select grantee,owner,table_name, grantable from dba_tab_privs
+			  where grantable='YES'
+			  and owner not in ('SYS','MDSYS','ORDPLUGINS','ORDSYS','SYSTEM',
+			  'WMSYS','SDB','LBACSYS')
+			  and grantee not in (select grantee from dba_role_privs where
+			  granted_role='DBA') order by grantee
+			) A,
+			  dba_users B
+			where
+			  A.grantee = B.username and B.account_status = 'OPEN'
+			union select
+			  grantee,owner,table_name, grantable from dba_tab_privs
+			where grantable='YES'
+			and owner not in ('SYS','MDSYS','ORDPLUGINS','ORDSYS','SYSTEM',
+			'WMSYS','SDB','LBACSYS')
+			and grantee not in (select grantee from dba_role_privs where
+			granted_role='DBA') and grantee = 'PUBLIC' order by grantee
+		]]>
+	</ORACLE_22>
+	<ORACLE_23>
+		<![CDATA[
+			select name as name, value as value from v$parameter where name='resource_limit'
+		]]>
+	</ORACLE_23>
+	<ORACLE_24>
+		<![CDATA[
+			select product as product, version as version from product_component_version
+		]]>
+	</ORACLE_24>
+	<ORACLE_25>
+		<![CDATA[
+			select name as name, value as value from v$parameter where name='audit_trail'
+		]]>
+	</ORACLE_25>
+	<ORACLE_26>
+		<![CDATA[
+			select * from product_component_version
+		]]>
+	</ORACLE_26>
+	<ORACLE_27>
+		<![CDATA[
+			select table_name as table_name, owner as owner from dba_tables where table_name='AUD$'
+		]]>
+	</ORACLE_27>
+</SQL_LIST>
