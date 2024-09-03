@@ -1,7 +1,1 @@
-data-io-uploader.chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-dataplatform-statistics.cluster-chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-dp-de-db.cluster-chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-markdown.cluster-chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-mlflow-server.chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-api-monitor.cluster-c5ezgm6uqqul.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
-internal-keycloak.cluster-c5ezgm6uqqul.ap-northeast-2.rds.amazonaws.com,admin계정,admin패스
+rds엔드포인트,admin계정,admin패스
