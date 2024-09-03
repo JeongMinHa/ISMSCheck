@@ -1,3 +1,1 @@
-jobpass-cluster.cluster-c5ezgm6uqqul.ap-northeast-2.rds.amazonaws.com,jobpassadmin,Kurly)!03
-dev-data-service-app.cluster-ccpovsahuunf.ap-northeast-2.rds.amazonaws.com,postgres,dquGSnutaBt65jGhMVRs
-data-service-app.cluster-chxoc1deoafx.ap-northeast-2.rds.amazonaws.com,postgres,dataapplication
+rds엔드포인트,admin계정,admin패스
