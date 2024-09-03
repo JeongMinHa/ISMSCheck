@@ -1,13 +1,1 @@
-WMS,jdbc:oracle:thin:@10.172.22.20:1521:REALWMS,sys,anthdb
-WCS,jdbc:oracle:thin:@10.12.43.111:1521:wcsprod,sys,Kurly07!(
-LKWCSDB,jdbc:oracle:thin:@172.120.49.14:1521:wcs_prod,sys,manager
-LGWCSDB,jdbc:oracle:thin:@172.120.30.11:1521:wcskurly,sys,oracle
-TF-WMS,jdbc:oracle:thin:@tf-wms.crhwhxvu0psg.ap-northeast-2.rds.amazonaws.com:1521:REALWMS,admin,Kurly)*11
-DEV-TF-WMS,jdbc:oracle:thin:@dev-tf-wms.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:REALWMS,admin,Kurly)#27
-DEV-WCS-ORACLE,jdbc:oracle:thin:@dev-wcs-oracle.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:WCSDEV,wcsadmin,Kurly!!18
-DEV-WMS-ORACLE,jdbc:oracle:thin:@dev-wms-oracle.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:REALWMS,admin,Admin!)04
-STG-EIS-ORACLE,jdbc:oracle:thin:@stg-eis-oracle.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:EIS,eisadmin,Kurly02)&
-STG-LGPWCS,jdbc:oracle:thin:@stg-lgpwcs.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:WCSKURLY,wcsadmin,Kurly!!18
-STG-TF-WMS,jdbc:oracle:thin:@stg-tf-wms.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:REALWMS,admin,Stgwms)!07
-STG-WCS-ORACLE,jdbc:oracle:thin:@stg-wcs-oracle.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:WCSQA,wcsadmin,Kurly!!18
-STG-WMS-ORACLE,jdbc:oracle:thin:@stg-wms-oracle.c9cx6a2jazb5.ap-northeast-2.rds.amazonaws.com:1521:REALWMS,admin,kurly)#11
+Host명,jdbc:oracle:thin:@IP:1521:SID,admin계정,admin패스
